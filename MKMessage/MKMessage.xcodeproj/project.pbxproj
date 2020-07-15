@@ -15,6 +15,8 @@
 		09CBF08724BF25F6003FD48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CBF08624BF25F6003FD48C /* Assets.xcassets */; };
 		09CBF08A24BF25F6003FD48C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CBF08824BF25F6003FD48C /* LaunchScreen.storyboard */; };
 		09CBF09524BF25F6003FD48C /* MKMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBF09424BF25F6003FD48C /* MKMessageTests.swift */; };
+		12E01C7F4424DE8DCE0E9E22 /* Pods_MKMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B917F1B05DF8AB5A7ED4ED93 /* Pods_MKMessage.framework */; };
+		23759FE33F6DDFFE51AA6A67 /* Pods_MKMessageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8C39519014D3036F9A1B78 /* Pods_MKMessageTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,12 @@
 		09CBF09024BF25F6003FD48C /* MKMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CBF09424BF25F6003FD48C /* MKMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMessageTests.swift; sourceTree = "<group>"; };
 		09CBF09624BF25F6003FD48C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CCDD1715E15949BD6BECFBE /* Pods-MKMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessage.release.xcconfig"; path = "Target Support Files/Pods-MKMessage/Pods-MKMessage.release.xcconfig"; sourceTree = "<group>"; };
+		B4208F79C6DEF394E7EB16B6 /* Pods-MKMessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessageTests.debug.xcconfig"; path = "Target Support Files/Pods-MKMessageTests/Pods-MKMessageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B699D5C002EFB69A1B049314 /* Pods-MKMessageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessageTests.release.xcconfig"; path = "Target Support Files/Pods-MKMessageTests/Pods-MKMessageTests.release.xcconfig"; sourceTree = "<group>"; };
+		B917F1B05DF8AB5A7ED4ED93 /* Pods_MKMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2CC1A83D4B7F3096018AAB /* Pods-MKMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessage.debug.xcconfig"; path = "Target Support Files/Pods-MKMessage/Pods-MKMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		FC8C39519014D3036F9A1B78 /* Pods_MKMessageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKMessageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E01C7F4424DE8DCE0E9E22 /* Pods_MKMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23759FE33F6DDFFE51AA6A67 /* Pods_MKMessageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074262E0B9C09BF9DBBD3380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B917F1B05DF8AB5A7ED4ED93 /* Pods_MKMessage.framework */,
+				FC8C39519014D3036F9A1B78 /* Pods_MKMessageTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09CBF06E24BF25F3003FD48C = {
 			isa = PBXGroup;
 			children = (
 				09CBF07924BF25F3003FD48C /* MKMessage */,
 				09CBF09324BF25F6003FD48C /* MKMessageTests */,
 				09CBF07824BF25F3003FD48C /* Products */,
+				68CCEA681FEE5FC1A124A9A2 /* Pods */,
+				074262E0B9C09BF9DBBD3380 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +123,18 @@
 			path = MKMessageTests;
 			sourceTree = "<group>";
 		};
+		68CCEA681FEE5FC1A124A9A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CC1A83D4B7F3096018AAB /* Pods-MKMessage.debug.xcconfig */,
+				0CCDD1715E15949BD6BECFBE /* Pods-MKMessage.release.xcconfig */,
+				B4208F79C6DEF394E7EB16B6 /* Pods-MKMessageTests.debug.xcconfig */,
+				B699D5C002EFB69A1B049314 /* Pods-MKMessageTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09CBF09924BF25F6003FD48C /* Build configuration list for PBXNativeTarget "MKMessage" */;
 			buildPhases = (
+				446CBB54573356FEFA01508B /* [CP] Check Pods Manifest.lock */,
 				09CBF07324BF25F3003FD48C /* Sources */,
 				09CBF07424BF25F3003FD48C /* Frameworks */,
 				09CBF07524BF25F3003FD48C /* Resources */,
+				B5197CC04B74EBE64B14D4C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09CBF09C24BF25F6003FD48C /* Build configuration list for PBXNativeTarget "MKMessageTests" */;
 			buildPhases = (
+				60A08F9066F159788A688EBF /* [CP] Check Pods Manifest.lock */,
 				09CBF08C24BF25F6003FD48C /* Sources */,
 				09CBF08D24BF25F6003FD48C /* Frameworks */,
 				09CBF08E24BF25F6003FD48C /* Resources */,
@@ -197,6 +233,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		446CBB54573356FEFA01508B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MKMessage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60A08F9066F159788A688EBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MKMessageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5197CC04B74EBE64B14D4C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKMessage/Pods-MKMessage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKMessage/Pods-MKMessage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKMessage/Pods-MKMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09CBF07324BF25F3003FD48C /* Sources */ = {
@@ -364,6 +464,7 @@
 		};
 		09CBF09A24BF25F6003FD48C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2CC1A83D4B7F3096018AAB /* Pods-MKMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +483,7 @@
 		};
 		09CBF09B24BF25F6003FD48C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CCDD1715E15949BD6BECFBE /* Pods-MKMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +502,7 @@
 		};
 		09CBF09D24BF25F6003FD48C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4208F79C6DEF394E7EB16B6 /* Pods-MKMessageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +525,7 @@
 		};
 		09CBF09E24BF25F6003FD48C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B699D5C002EFB69A1B049314 /* Pods-MKMessageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
