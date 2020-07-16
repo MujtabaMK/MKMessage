@@ -108,6 +108,8 @@ class LoginViewController: UIViewController {
                               height: 51)
     }
     
+    //MARK:- DidTapButton
+    
     @objc private func didTapButton(){
         emailtxt.resignFirstResponder()
         passwordtxt.resignFirstResponder()
