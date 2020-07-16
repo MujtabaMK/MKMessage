@@ -128,6 +128,7 @@ class LoginViewController: UIViewController {
         })
     }
     
+    //MARK:-
     func alertUserLoginError(){
         let alert = UIAlertController(title: "Opps", message: "Please Enter All Info to Log In", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
