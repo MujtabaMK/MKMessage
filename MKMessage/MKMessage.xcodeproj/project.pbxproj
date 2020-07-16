@@ -21,6 +21,7 @@
 		09EE743324C0242700D1ED54 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE743224C0242700D1ED54 /* VideoPlayerViewController.swift */; };
 		09EE743624C0248900D1ED54 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE743524C0248900D1ED54 /* NewConversationViewController.swift */; };
 		09EE743824C0249800D1ED54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE743724C0249800D1ED54 /* ProfileViewController.swift */; };
+		09EE743B24C04CD200D1ED54 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE743A24C04CD200D1ED54 /* Extention.swift */; };
 		12E01C7F4424DE8DCE0E9E22 /* Pods_MKMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B917F1B05DF8AB5A7ED4ED93 /* Pods_MKMessage.framework */; };
 		23759FE33F6DDFFE51AA6A67 /* Pods_MKMessageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8C39519014D3036F9A1B78 /* Pods_MKMessageTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		09EE743224C0242700D1ED54 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		09EE743524C0248900D1ED54 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		09EE743724C0249800D1ED54 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		09EE743A24C04CD200D1ED54 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		0CCDD1715E15949BD6BECFBE /* Pods-MKMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessage.release.xcconfig"; path = "Target Support Files/Pods-MKMessage/Pods-MKMessage.release.xcconfig"; sourceTree = "<group>"; };
 		B4208F79C6DEF394E7EB16B6 /* Pods-MKMessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessageTests.debug.xcconfig"; path = "Target Support Files/Pods-MKMessageTests/Pods-MKMessageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B699D5C002EFB69A1B049314 /* Pods-MKMessageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKMessageTests.release.xcconfig"; path = "Target Support Files/Pods-MKMessageTests/Pods-MKMessageTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				09CBF07C24BF25F3003FD48C /* SceneDelegate.swift */,
 				09CBF07A24BF25F3003FD48C /* AppDelegate.swift */,
+				09EE743A24C04CD200D1ED54 /* Extention.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,9 +172,8 @@
 		09EE742A24C021F900D1ED54 /* Controlers */ = {
 			isa = PBXGroup;
 			children = (
+				09EE743924C0394900D1ED54 /* Login */,
 				09CBF07E24BF25F3003FD48C /* ConversationViewControllerViewController.swift */,
-				09EE742C24C023EE00D1ED54 /* LoginViewController.swift */,
-				09EE742E24C023FE00D1ED54 /* RegisterViewController.swift */,
 				09EE743024C0241800D1ED54 /* PhotoViewerViewController.swift */,
 				09EE743224C0242700D1ED54 /* VideoPlayerViewController.swift */,
 				09EE743524C0248900D1ED54 /* NewConversationViewController.swift */,
@@ -187,6 +189,15 @@
 				09CBF08824BF25F6003FD48C /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		09EE743924C0394900D1ED54 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				09EE742C24C023EE00D1ED54 /* LoginViewController.swift */,
+				09EE742E24C023FE00D1ED54 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		68CCEA681FEE5FC1A124A9A2 /* Pods */ = {
@@ -377,6 +388,7 @@
 				09EE743324C0242700D1ED54 /* VideoPlayerViewController.swift in Sources */,
 				09EE743624C0248900D1ED54 /* NewConversationViewController.swift in Sources */,
 				09EE742D24C023EE00D1ED54 /* LoginViewController.swift in Sources */,
+				09EE743B24C04CD200D1ED54 /* Extention.swift in Sources */,
 				09CBF08524BF25F3003FD48C /* MKMessage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6NK7S2PWH2;
 				INFOPLIST_FILE = MKMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -560,6 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6NK7S2PWH2;
 				INFOPLIST_FILE = MKMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
