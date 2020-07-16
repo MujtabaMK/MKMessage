@@ -51,6 +51,10 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow app to access camera for profile picture</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Please allow app to access photo library for profile picture</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
