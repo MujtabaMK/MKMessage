@@ -8,6 +8,9 @@ target 'MKMessage' do
   # Pods for MKMessage
 
     pod 'Alamofire', '~> 4.7'
+    pod 'Firebase/Core'
+    pod 'FirebaseAuth', '6.4.1'
+    pod 'Firebase/Database'
     
   target 'MKMessageTests' do
     inherit! :search_paths
