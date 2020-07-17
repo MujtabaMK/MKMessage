@@ -187,6 +187,7 @@ class RegisterViewController: UIViewController {
         })
         
     }
+    //MARK:- AlertUserLogin
     
     func alertUserLoginError(){
         let alert = UIAlertController(title: "Opps", message: "Please Enter All Info to Register", preferredStyle: .alert)
