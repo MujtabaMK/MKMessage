@@ -195,6 +195,8 @@ class RegisterViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    //MARK:- Did
+    
     @objc private func didTapNavigationButton(){
         let VC = RegisterViewController()
         VC.title = "Create Account"
