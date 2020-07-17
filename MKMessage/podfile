@@ -11,6 +11,7 @@ target 'MKMessage' do
     pod 'Firebase/Core'
     pod 'FirebaseAuth', '6.4.1'
     pod 'Firebase/Database'
+    pod 'FBSDKLoginKit'
     
   target 'MKMessageTests' do
     inherit! :search_paths
