@@ -229,6 +229,7 @@
 				09CBF07424BF25F3003FD48C /* Frameworks */,
 				09CBF07524BF25F3003FD48C /* Resources */,
 				B5197CC04B74EBE64B14D4C1 /* [CP] Embed Pods Frameworks */,
+				19181F7A340CC9944284B344 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,6 +319,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19181F7A340CC9944284B344 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKMessage/Pods-MKMessage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKMessage/Pods-MKMessage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKMessage/Pods-MKMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		446CBB54573356FEFA01508B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FBSDKLoginKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -72,9 +73,24 @@ class LoginViewController: UIViewController {
         LoginButton.permissions = ["email,public_profile"]
         return LoginButton
     }()
-        
+    
+    private let googleSignInButton = GIDSignInButton()
+    
+    private var LoginObserver: NSObjectProtocol?
+    
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LoginObserver = NotificationCenter.default.addObserver(forName: .didLogInNotification, object: nil, queue: .main, using: { [weak self] _ in
+            guard let StorngSelf = self else{
+                return
+            }
+            StorngSelf.navigationController?.dismiss(animated: true, completion: nil)
+        })
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        
         title = "Log In"
         view.backgroundColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapNavigationButton))
@@ -91,7 +107,13 @@ class LoginViewController: UIViewController {
         scrollview.addSubview(passwordtxt)
         scrollview.addSubview(Button)
         scrollview.addSubview(loginButton)
-        
+        scrollview.addSubview(googleSignInButton)
+    }
+    
+    deinit {
+        if let observer = LoginObserver{
+            NotificationCenter.default.removeObserver(observer)
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -119,6 +141,10 @@ class LoginViewController: UIViewController {
                               y: Button.Bottom + 10,
                               width: scrollview.Width - 60,
                               height: 51)
+        googleSignInButton.frame = CGRect(x: 30,
+                                   y: loginButton.Bottom + 10,
+                                   width: scrollview.Width - 60,
+                                   height: 51)
     }
     
     //MARK:- DidTapButton
