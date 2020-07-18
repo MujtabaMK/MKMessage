@@ -25,6 +25,7 @@ target 'MKMessage' do
     pod 'MessageKit'
     pod 'JGProgressHUD'
     pod 'SDWebImage'
+    pod 'RealmSwift'
     
   target 'MKMessageTests' do
     inherit! :search_paths
