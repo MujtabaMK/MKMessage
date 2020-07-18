@@ -7,12 +7,24 @@ target 'MKMessage' do
 
   # Pods for MKMessage
 
+  # Almofire
     pod 'Alamofire', '~> 4.7'
+
+  # Firebase
     pod 'Firebase/Core'
     pod 'FirebaseAuth', '6.4.1'
     pod 'Firebase/Database'
+
+  # Facebook SignIn
+
     pod 'FBSDKLoginKit'
+
+  # Google SignIn
     pod 'GoogleSignIn'
+
+    pod 'MessageKit'
+    pod 'JGProgressHUD'
+    pod 'SDWebImage'
     
   target 'MKMessageTests' do
     inherit! :search_paths
